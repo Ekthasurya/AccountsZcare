@@ -17,16 +17,16 @@ const floatingVariants = {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-r from-[#b78c25]/90 to-[#d4880a]/80 text-white py-16 overflow-hidden">
+    <footer className="relative bg-gradient-to-r from-blue-500 to-orange-400 text-white py-16 overflow-hidden">
       
       {/* Animated Background Overlays */}
       <motion.div
-        className="absolute top-0 left-1/3 w-[400px] h-[400px] bg-white/8 rounded-full filter blur-3xl pointer-events-none"
+        className="absolute top-0 left-1/3 w-[400px] h-[400px] bg-blue-200/20 rounded-full filter blur-3xl pointer-events-none"
         variants={floatingVariants}
         animate="float"
       />
       <motion.div
-        className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-white/5 rounded-full filter blur-3xl pointer-events-none"
+        className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-orange-200/20 rounded-full filter blur-3xl pointer-events-none"
         variants={floatingVariants}
         animate="float"
         transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
@@ -35,8 +35,10 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 relative z-10">
         {/* Company Info */}
         <div>
-          <h3 className="text-xl font-bold mb-4">AccountsZ CARE</h3>
-          <p className="text-gray-100 text-sm leading-relaxed">
+          <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-orange-100">
+            AccountsZ CARE
+          </h3>
+          <p className="text-white/90 text-sm leading-relaxed">
             Expert accounting, taxation & compliance solutions for your business. 
             Trusted by companies nationwide.
           </p>
@@ -44,37 +46,41 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+          <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-orange-100">
+            Quick Links
+          </h3>
           <ul className="space-y-2">
             <li>
-              <Link to="/services" className="hover:text-gray-200 transition-colors">Services</Link>
+              <Link to="/services" className="hover:text-white/80 transition-colors">Services</Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-gray-200 transition-colors">About Us</Link>
+              <Link to="/about" className="hover:text-white/80 transition-colors">About Us</Link>
             </li>
             <li>
-              <Link to="/contact" className="hover:text-gray-200 transition-colors">Contact</Link>
+              <Link to="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
             </li>
             <li>
-              <Link to="/privacy" className="hover:text-gray-200 transition-colors">Privacy Policy</Link>
+              <Link to="/privacy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
             </li>
           </ul>
         </div>
 
         {/* Social Links */}
         <div>
-          <h3 className="text-xl font-bold mb-4">Follow Us</h3>
+          <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-orange-100">
+            Follow Us
+          </h3>
           <div className="flex space-x-4 mt-2">
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-white/40 transition">
+            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
               <FaFacebookF />
             </a>
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-white/40 transition">
+            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
               <FaTwitter />
             </a>
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-white/40 transition">
+            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
               <FaLinkedinIn />
             </a>
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-white/40 transition">
+            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
               <FaInstagram />
             </a>
           </div>
@@ -82,7 +88,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-12 border-t border-white/30 pt-6 text-center text-sm text-gray-100">
+      <div className="mt-12 border-t border-white/30 pt-6 text-center text-sm text-white/90">
         © {new Date().getFullYear()} AccountsZ CARE. All rights reserved.
       </div>
     </footer>

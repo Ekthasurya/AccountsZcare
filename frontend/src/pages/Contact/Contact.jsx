@@ -8,7 +8,7 @@ const Contact = () => {
     <PageWrapper>
 
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-b from-sky-100 via-white to-gray-50 py-32 text-center">
+      <section className="bg-gradient-to-b from-[#fff7ed] via-white to-gray-50 py-32 text-center">
         <Container>
           <motion.h1
             className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight"
@@ -81,7 +81,7 @@ const Contact = () => {
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="w-full bg-gradient-to-r from-sky-500 to-indigo-500 text-white py-4 rounded-xl font-semibold shadow-lg hover:from-indigo-500 hover:to-sky-500 transition"
+                className="w-full bg-gradient-to-r from-blue-500 to-orange-400 text-white py-4 rounded-xl font-semibold shadow-lg hover:from-orange-400 hover:to-blue-500 transition-all"
               >
                 Send Message
               </motion.button>
@@ -93,7 +93,7 @@ const Contact = () => {
       {/* CTA */}
       <section className="py-24">
         <Container>
-          <div className="bg-gradient-to-r from-sky-100 to-indigo-100 rounded-3xl text-center p-20 shadow-xl">
+          <div className="bg-gradient-to-r from-blue-100 to-orange-100 rounded-3xl text-center p-20 shadow-xl">
             <h2 className="text-3xl font-extrabold text-gray-900">
               Get Your Free Consultation
             </h2>
@@ -103,7 +103,7 @@ const Contact = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="mt-8 bg-gradient-to-r from-sky-500 to-indigo-500 text-white px-10 py-4 rounded-xl font-semibold shadow-lg hover:from-indigo-500 hover:to-sky-500 transition"
+              className="mt-8 bg-gradient-to-r from-blue-500 to-orange-400 text-white px-10 py-4 rounded-xl font-semibold shadow-lg hover:from-orange-400 hover:to-blue-500 transition-all"
             >
               Contact Us
             </motion.button>
@@ -121,7 +121,7 @@ const InfoCard = ({ icon, title, text }) => (
     whileHover={{ y: -5, scale: 1.02 }}
     className="bg-white/80 backdrop-blur-md rounded-3xl p-8 text-center shadow-lg transition-all border border-gray-100"
   >
-    <div className="w-16 h-16 mx-auto flex items-center justify-center bg-sky-100 text-sky-500 rounded-full mb-4 text-2xl">
+    <div className="w-16 h-16 mx-auto flex items-center justify-center bg-gradient-to-r from-blue-500 to-orange-400 text-white rounded-full mb-4 text-2xl">
       {icon}
     </div>
     <h3 className="font-semibold text-gray-900 text-lg">{title}</h3>
@@ -135,14 +135,14 @@ const Input = ({ label, type }) => (
     <input
       type={type}
       placeholder=" "
-      className="peer w-full rounded-xl bg-white/60 border border-gray-300 p-4 pt-6 focus:ring-2 focus:ring-sky-400 focus:border-transparent outline-none backdrop-blur-sm transition"
+      className="peer w-full rounded-xl bg-white/60 border border-gray-300 p-4 pt-6 focus:ring-2 focus:ring-orange-400 focus:border-transparent outline-none backdrop-blur-sm transition"
     />
     <label className="absolute left-4 top-4 text-gray-400 text-sm transition-all
       peer-placeholder-shown:top-6
       peer-placeholder-shown:text-base
       peer-focus:top-3
       peer-focus:text-sm
-      peer-focus:text-sky-500">
+      peer-focus:text-orange-500">
       {label}
     </label>
   </div>
@@ -154,14 +154,14 @@ const Textarea = ({ label }) => (
     <textarea
       rows="4"
       placeholder=" "
-      className="peer w-full rounded-xl bg-white/60 border border-gray-300 p-4 pt-6 focus:ring-2 focus:ring-sky-400 outline-none resize-none backdrop-blur-sm transition"
+      className="peer w-full rounded-xl bg-white/60 border border-gray-300 p-4 pt-6 focus:ring-2 focus:ring-orange-400 outline-none resize-none backdrop-blur-sm transition"
     />
     <label className="absolute left-4 top-4 text-gray-400 text-sm transition-all
       peer-placeholder-shown:top-6
       peer-placeholder-shown:text-base
       peer-focus:top-3
       peer-focus:text-sm
-      peer-focus:text-sky-500">
+      peer-focus:text-orange-500">
       {label}
     </label>
   </div>
