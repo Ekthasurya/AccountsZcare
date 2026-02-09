@@ -2,11 +2,14 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navLinks } from "../../constants/navLinks";
 import { HiMenu, HiX } from "react-icons/hi";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const whatsappLink =
+    "https://wa.me/916291653171?text=Hello%20I%20need%20consultation";
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md bg-white/80 border-b border-gray-200">
@@ -42,13 +45,19 @@ const Navbar = () => {
             </NavLink>
           ))}
 
-          {/* CTA Button */}
-          <Link
-            to="/contact"
-            className="ml-6 bg-gradient-to-r from-blue-500 to-orange-400 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:from-orange-400 hover:to-blue-500 transition-all duration-300"
+          {/* Get Consultation */}
+          
+
+          {/* WhatsApp Button */}
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="ml-4 flex items-center gap-2 bg-green-500 text-white px-5 py-3 rounded-xl font-semibold shadow-md hover:bg-green-600 transition-all duration-300"
           >
-            Get Consultation
-          </Link>
+            <FaWhatsapp className="text-xl" />
+            WhatsApp
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -70,7 +79,7 @@ const Navbar = () => {
               <NavLink
                 key={link.path}
                 to={link.path}
-                onClick={() => setIsOpen(false)} // close menu on click
+                onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
                   `text-base font-semibold transition-all duration-300 ${
                     isActive
@@ -82,13 +91,21 @@ const Navbar = () => {
                 {link.label}
               </NavLink>
             ))}
-            <Link
-              to="/contact"
+
+           
+            
+
+            {/* Mobile WhatsApp */}
+            <a
+              href={whatsappLink}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setIsOpen(false)}
-              className="bg-gradient-to-r from-blue-500 to-orange-400 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:from-orange-400 hover:to-blue-500 transition-all duration-300 text-center"
+              className="flex items-center justify-center gap-2 bg-green-500 text-white px-6 py-3 rounded-xl font-semibold shadow-md hover:bg-green-600 transition-all duration-300"
             >
-              Get Consultation
-            </Link>
+              <FaWhatsapp className="text-xl" />
+              WhatsApp Us
+            </a>
           </div>
         </div>
       )}

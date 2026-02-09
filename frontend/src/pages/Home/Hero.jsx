@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { fadeUp } from "../../animations/variants";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -100,9 +101,9 @@ const Hero = () => {
             Get a Free Consultation
           </button>
 
-          <button className="border border-white/40 px-10 py-4 rounded-xl font-semibold hover:bg-white hover:text-black transition">
+          <Link to ="/services"><button className="border border-white/40 px-10 py-4 rounded-xl font-semibold hover:bg-white hover:text-black transition">
             Our Services
-          </button>
+          </button></Link>
         </motion.div>
       </div>
     </section>
