@@ -1,96 +1,133 @@
-import { motion } from "framer-motion";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaYoutube, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
-// Subtle floating animation for Footer
-const floatingVariants = {
-  float: {
-    y: [0, -8, 0],  // smaller vertical movement
-    x: [0, 4, 0],   // subtle horizontal sway
-    transition: {
-      duration: 20,   // slower than CTA
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-r from-blue-500 to-orange-400 text-white py-16 overflow-hidden">
-      
-      {/* Animated Background Overlays */}
-      <motion.div
-        className="absolute top-0 left-1/3 w-[400px] h-[400px] bg-blue-200/20 rounded-full filter blur-3xl pointer-events-none"
-        variants={floatingVariants}
-        animate="float"
-      />
-      <motion.div
-        className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-orange-200/20 rounded-full filter blur-3xl pointer-events-none"
-        variants={floatingVariants}
-        animate="float"
-        transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
-      />
+    <footer className="bg-[#ff6b01] text-white pt-7 pb-6">
 
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 relative z-10">
-        {/* Company Info */}
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 ">
+
+        {/* Logo + About */}
         <div>
-          <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-orange-100">
-            AccountsZ CARE
-          </h3>
-          <p className="text-white/90 text-sm leading-relaxed">
-            Expert accounting, taxation & compliance solutions for your business. 
-            Trusted by companies nationwide.
+          <img
+            src="https://res.cloudinary.com/dhd5do52g/image/upload/v1768120968/file_00000000ba6c71faa39b6cb1891035c4_gpbbgm.png"
+            alt="AccountsZ CARE"
+            className="w-48 mb-4"
+          />
+
+          <p className="text-sm text-white/90 leading-relaxed">
+            AccountsZ CARE provides professional accounting, taxation,
+            compliance, and business support services across India with
+            accuracy and reliability.
           </p>
         </div>
 
-        {/* Quick Links */}
+        {/* Our Services */}
         <div>
-          <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-orange-100">
-            Quick Links
+          <h3 className="text-lg font-semibold mb-4">
+            OUR SERVICES
           </h3>
-          <ul className="space-y-2">
+
+          <ul className="space-y-2 text-white/90 text-sm">
             <li>
-              <Link to="/services" className="hover:text-white/80 transition-colors">Services</Link>
+              <Link to="/services#GeneralServices" className="hover:text-[#00a2a9] transition">
+                Audit & Assurance
+              </Link>
             </li>
+
             <li>
-              <Link to="/about" className="hover:text-white/80 transition-colors">About Us</Link>
+              <Link to="/services#GeneralServices" className="hover:text-[#00a2a9] transition">
+                Income Tax & GST
+              </Link>
             </li>
+
             <li>
-              <Link to="/contact" className="hover:text-white/80 transition-colors">Contact</Link>
+              <Link to="/services#TechnicalServices" className="hover:text-[#00a2a9] transition">
+                PF & ESIC Services
+              </Link>
             </li>
+
             <li>
-              <Link to="/privacy" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
+              <Link to="/services#TechnicalServices" className="hover:text-[#00a2a9] transition">
+                Trade License
+              </Link>
+            </li>
+
+            <li>
+              <Link to="/services#SoftServices" className="hover:text-[#00a2a9] transition">
+                DSC Registration
+              </Link>
             </li>
           </ul>
         </div>
 
-        {/* Social Links */}
+        {/* Office Address */}
         <div>
-          <h3 className="text-xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-200 to-orange-100">
-            Follow Us
+          <h3 className="text-lg font-semibold mb-4">
+            OFFICE ADDRESS
           </h3>
-          <div className="flex space-x-4 mt-2">
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
+
+          <p className="text-sm text-white/90 leading-relaxed">
+            Hatiara, New Market, Kolkata-700157
+          </p>
+        </div>
+
+        {/* Social */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">
+            GET SOCIAL
+          </h3>
+
+          <div className="flex gap-4 text-xl mb-4">
+
+            <a
+              href="#"
+              className="bg-white/20 p-3 rounded-full hover:bg-[#00a2a9] transition"
+            >
               <FaFacebookF />
             </a>
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
-              <FaTwitter />
+
+            <a
+              href="#"
+              className="bg-white/20 p-3 rounded-full hover:bg-[#00a2a9] transition"
+            >
+              <FaYoutube />
             </a>
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
+
+            <a
+              href="#"
+              className="bg-white/20 p-3 rounded-full hover:bg-[#00a2a9] transition"
+            >
               <FaLinkedinIn />
             </a>
-            <a href="#" className="bg-white/20 p-3 rounded-full hover:bg-gradient-to-r from-blue-500 to-orange-400 hover:text-white transition-all">
+
+            <a
+              href="#"
+              className="bg-white/20 p-3 rounded-full hover:bg-[#00a2a9] transition"
+            >
               <FaInstagram />
             </a>
+
           </div>
+
         </div>
+
       </div>
 
       {/* Bottom Bar */}
-      <div className="mt-12 border-t border-white/30 pt-6 text-center text-sm text-white/90">
-        © {new Date().getFullYear()} AccountsZ CARE. All rights reserved.
+      <div className="border-t border-white/30 mt-10 pt-4">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-sm text-white/90">
+
+          <p>© 2026 AccountsZ CARE | All rights reserved.</p>
+
+          <p>
+            Site designed & developed by{" "}
+            <span className="font-semibold">LUMINEST</span>
+          </p>
+
+        </div>
       </div>
+
     </footer>
   );
 };

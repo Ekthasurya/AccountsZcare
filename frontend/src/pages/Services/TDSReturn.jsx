@@ -1,77 +1,169 @@
-// pages/services/TDSReturn.jsx
+// pages/services/GSTServices.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaMoneyCheckAlt, FaFileInvoice, FaFileAlt } from "react-icons/fa";
+import {
+  FaFileSignature,
+  FaFileInvoice,
+  FaBalanceScale,
+  FaPercent,
+  FaTruck,
+  FaExclamationTriangle,
+  FaLightbulb
+} from "react-icons/fa";
 
-const TDSReturn = () => {
+const GSTServices = () => {
   return (
-    <section className="py-28 bg-gray-50 min-h-screen text-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Page Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#0077FF] to-[#FF7F00]">
-          TDS Return Services
-        </h1>
+    <section className="min-h-screen">
 
-        {/* Introduction */}
-        <p className="text-lg md:text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-          At AccountsZ CARE, we provide complete and reliable TDS Return Services to help businesses and professionals stay fully compliant with Income Tax regulations. Our structured approach ensures accurate deduction, timely filing, and error-free reporting, reducing the risk of penalties and notices.
-        </p>
+      {/* Hero Section */}
+      <div
+        className="relative h-[60vh] flex items-center justify-center text-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1554224154-26032ffc0d07')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Info Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaMoneyCheckAlt className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">TDS Calculation & Deduction</h3>
-            <p className="text-gray-600">Accurate calculation of TDS on salary, professional fees, contract payments, rent, interest, and other payments.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaFileInvoice className="text-[#FF7F00] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Quarterly Return Filing</h3>
-            <p className="text-gray-600">Preparation and filing of TDS returns (Form 24Q, 26Q, 27Q, 27EQ) within statutory due dates.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaFileAlt className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Challan & Form 16/16A</h3>
-            <p className="text-gray-600">Generation of TDS challans and issuance of TDS certificates to employees and vendors.</p>
-          </div>
-        </div>
+        <div className="relative z-10 max-w-3xl px-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+            Goods & Services Tax (GST) Services
+          </h1>
 
-        {/* Detailed Description */}
-        <div className="mb-12 bg-white rounded-3xl shadow-xl p-10 border border-gray-200">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Our TDS Services Include</h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-700 leading-relaxed">
-            <li><strong>TDS Reconciliation:</strong> Reconciliation of returns with TRACES to ensure accuracy and avoid mismatches.</li>
-            <li><strong>TDS Correction Returns:</strong> Revision and correction for PAN errors, challan mismatches, or discrepancies.</li>
-            <li><strong>Notices & Compliance Support:</strong> Professional handling of TDS notices and assistance with departmental queries.</li>
-          </ul>
-        </div>
-
-        {/* Who We Serve */}
-        <div className="mb-12 bg-gradient-to-r from-[#0077FF]/20 via-[#FF7F00]/20 to-[#0077FF]/20 rounded-3xl p-10 shadow-inner text-center border border-gray-100">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Who We Serve</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-            <li>Businesses & Companies</li>
-            <li>Professionals & Consultants</li>
-            <li>Employers & Organizations</li>
-            <li>Individuals with TDS obligations</li>
-          </ul>
-          <p className="text-gray-700 font-medium">
-            With AccountsZ CARE, your TDS compliance is managed with accuracy, timeliness, and complete care — so you can focus on your core business operations.
+          <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+            At AccountsZ CARE, we provide comprehensive GST Services to help
+            businesses stay compliant, organized, and stress-free under GST law.
           </p>
         </div>
+      </div>
 
-        {/* Back Button */}
-        <div className="text-center">
-          <Link
-            to="/services"
-            className="inline-block bg-gradient-to-r from-[#0077FF] to-[#FF7F00] text-white px-12 py-4 rounded-3xl font-semibold shadow-xl hover:opacity-90 transition"
-          >
-            Back to Services
-          </Link>
+      {/* Main Content */}
+      <div
+        className="py-20"
+        style={{ backgroundColor: "#fff8f2", color: "#003b4d" }}
+      >
+        <div className="max-w-5xl mx-auto px-6">
+
+          {/* Intro */}
+          <div className="mb-12">
+            <p className="text-lg leading-relaxed">
+              From registration to return filing and ongoing compliance, our
+              experts ensure accuracy, timeliness, and complete regulatory
+              adherence.
+            </p>
+          </div>
+
+          {/* Services */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6">
+              Our GST Services Include
+            </h2>
+
+            <div className="space-y-6 text-lg">
+
+              <div className="flex items-start gap-4">
+                <FaFileSignature className="text-2xl mt-1" />
+                <p>
+                  <strong>GST Registration:</strong> New GST registration,
+                  amendment, and cancellation with complete documentation
+                  support.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaFileInvoice className="text-2xl mt-1" />
+                <p>
+                  <strong>GST Return Filing:</strong> Timely and accurate filing
+                  of GSTR-1, GSTR-3B, GSTR-2B reconciliation, GSTR-9, and
+                  GSTR-9C.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaBalanceScale className="text-2xl mt-1" />
+                <p>
+                  <strong>GST Accounting & Reconciliation:</strong>
+                  Reconciliation of sales, purchases, ITC, and GST data with
+                  books of accounts.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaPercent className="text-2xl mt-1" />
+                <p>
+                  <strong>Input Tax Credit (ITC) Management:</strong> Proper
+                  tracking, verification, and optimization of eligible Input
+                  Tax Credit.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaTruck className="text-2xl mt-1" />
+                <p>
+                  <strong>E-Invoice & E-Way Bill Compliance:</strong>
+                  Generation and compliance support for e-invoicing and
+                  e-way bills.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaExclamationTriangle className="text-2xl mt-1" />
+                <p>
+                  <strong>GST Notices & Departmental Support:</strong>
+                  Professional handling of GST notices, replies, and
+                  assessments.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaLightbulb className="text-2xl mt-1" />
+                <p>
+                  <strong>GST Advisory & Compliance Review:</strong>
+                  Expert guidance on GST applicability, tax rates,
+                  place of supply, and compliance planning.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Who We Serve */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">
+              Who We Serve
+            </h2>
+
+            <ul className="list-disc list-inside space-y-3 text-lg">
+              <li>Traders & Manufacturers</li>
+              <li>Service Providers</li>
+              <li>Small & Medium Businesses</li>
+              <li>Startups & Professionals</li>
+            </ul>
+
+            <p className="mt-6 text-lg font-medium">
+              With AccountsZ CARE, GST compliance becomes simple,
+              systematic, and stress-free — allowing you to focus on
+              growing your business while we take care of the tax
+              complexities.
+            </p>
+          </div>
+
+          {/* Back Button */}
+          <div className="text-center">
+            <Link
+              to="/services"
+              className="inline-block bg-[#003b4d] text-white px-12 py-4 rounded-2xl font-semibold hover:opacity-90 transition"
+            >
+              Back to Services
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default TDSReturn;
+export default GSTServices;

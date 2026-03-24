@@ -1,67 +1,156 @@
-// pages/services/PANTAN.jsx
+// pages/services/PANTANServices.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaIdCard, FaRegFileAlt, FaCheckCircle } from "react-icons/fa";
+import {
+  FaIdCard,
+  FaEdit,
+  FaGlobe,
+  FaFileSignature,
+  FaSyncAlt,
+  FaPrint
+} from "react-icons/fa";
 
-const PANTAN = () => {
+const PANTANServices = () => {
   return (
-    <section className="py-28 bg-gray-50 min-h-screen text-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Page Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#0077FF] to-[#FF7F00]">
-          PAN & TAN Services
-        </h1>
+    <section className="min-h-screen">
 
-        {/* Introduction */}
-        <p className="text-lg md:text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-          At AccountsZ CARE, we provide fast, reliable, and hassle-free PAN & TAN Services for individuals, businesses, and organizations. Our expert support ensures accurate application, timely processing, and complete compliance with Income Tax Department requirements.
-        </p>
+      {/* Hero Section */}
+      <div
+        className="relative h-[60vh] flex items-center justify-center text-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1554224155-1696413565d3')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Info Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaIdCard className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">New PAN Application</h3>
-            <p className="text-gray-600">PAN application for individuals, firms, companies, LLPs, and trusts with end-to-end support.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaRegFileAlt className="text-[#FF7F00] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">PAN / TAN Correction & Update</h3>
-            <p className="text-gray-600">Correction of PAN/TAN details including name, address, date of birth, and other required updates.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaCheckCircle className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Lost / Duplicate PAN & TAN</h3>
-            <p className="text-gray-600">Support for reissue of duplicate PAN card or TAN allotment letters with proper documentation.</p>
-          </div>
-        </div>
+        <div className="relative z-10 max-w-3xl px-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+            PAN & TAN Services
+          </h1>
 
-        {/* Who We Serve */}
-        <div className="mb-12 bg-gradient-to-r from-[#0077FF]/20 via-[#FF7F00]/20 to-[#0077FF]/20 rounded-3xl p-10 shadow-inner text-center border border-gray-100">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Who We Serve</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-            <li>Individuals & Professionals</li>
-            <li>Businesses & Startups</li>
-            <li>Companies & Firms</li>
-            <li>Trusts & NGOs</li>
-          </ul>
-          <p className="text-gray-700 font-medium">
-            With AccountsZ CARE, PAN & TAN applications are handled efficiently and professionally—saving your time and ensuring complete compliance from day one.
+          <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+            At AccountsZ CARE, we provide fast, reliable, and hassle-free
+            PAN & TAN Services for individuals, businesses, and organizations.
           </p>
         </div>
+      </div>
 
-        {/* Back Button */}
-        <div className="text-center">
-          <Link
-            to="/services"
-            className="inline-block bg-gradient-to-r from-[#0077FF] to-[#FF7F00] text-white px-12 py-4 rounded-3xl font-semibold shadow-xl hover:opacity-90 transition"
-          >
-            Back to Services
-          </Link>
+      {/* Main Content */}
+      <div
+        className="py-20"
+        style={{ backgroundColor: "#fff8f2", color: "#003b4d" }}
+      >
+        <div className="max-w-5xl mx-auto px-6">
+
+          {/* Intro */}
+          <div className="mb-12">
+            <p className="text-lg leading-relaxed">
+              Our expert support ensures accurate application, timely
+              processing, and complete compliance with Income Tax Department
+              requirements.
+            </p>
+          </div>
+
+          {/* Services */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6">
+              Our PAN & TAN Services Include
+            </h2>
+
+            <div className="space-y-6 text-lg">
+
+              <div className="flex items-start gap-4">
+                <FaIdCard className="text-2xl mt-1" />
+                <p>
+                  <strong>New PAN Application:</strong> PAN application for
+                  individuals, firms, companies, LLPs, and trusts with
+                  complete end-to-end support.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaEdit className="text-2xl mt-1" />
+                <p>
+                  <strong>PAN Correction / Update:</strong> Correction of
+                  name, date of birth, address, photograph, or other
+                  PAN details.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaGlobe className="text-2xl mt-1" />
+                <p>
+                  <strong>PAN for Non-Residents (NRI):</strong> PAN
+                  application and compliance support for NRIs and
+                  foreign entities.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaFileSignature className="text-2xl mt-1" />
+                <p>
+                  <strong>New TAN Registration:</strong> TAN application
+                  for businesses and employers required to deduct or
+                  collect tax.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaSyncAlt className="text-2xl mt-1" />
+                <p>
+                  <strong>TAN Correction / Update:</strong> Correction of
+                  TAN details and assistance with record updates.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaPrint className="text-2xl mt-1" />
+                <p>
+                  <strong>Lost PAN / TAN Reprint:</strong> Duplicate PAN
+                  card or TAN allotment letter reissue support.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Who We Serve */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">
+              Who We Serve
+            </h2>
+
+            <ul className="list-disc list-inside space-y-3 text-lg">
+              <li>Individuals & Professionals</li>
+              <li>Businesses & Startups</li>
+              <li>Companies & Firms</li>
+              <li>Trusts & NGOs</li>
+            </ul>
+
+            <p className="mt-6 text-lg font-medium">
+              With AccountsZ CARE, PAN & TAN applications are handled
+              efficiently and professionally — saving your time and
+              ensuring complete compliance from day one.
+            </p>
+          </div>
+
+          {/* Back Button */}
+          <div className="text-center">
+            <Link
+              to="/services"
+              className="inline-block bg-[#003b4d] text-white px-12 py-4 rounded-2xl font-semibold hover:opacity-90 transition"
+            >
+              Back to Services
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default PANTAN;
+export default PANTANServices;

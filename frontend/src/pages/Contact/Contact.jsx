@@ -32,88 +32,117 @@ const Contact = () => {
 
   return (
     <PageWrapper>
+
       {/* HERO */}
-      <section className="bg-gradient-to-b from-[#fff7ed] via-white to-gray-50 py-32 text-center">
+      <section className="py-24 text-center bg-[#fff0e0]">
         <Container>
-          <motion.h1
-            className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-4"
-            initial={{ y: -50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-          >
+          <h1 className="text-5xl md:text-6xl font-extrabold text-[#0c3750] mb-4">
             Contact Us
-          </motion.h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          </h1>
+          <p className="text-lg text-[#0c3750] max-w-2xl mx-auto">
             We’re here to help. Reach out anytime for support or inquiries.
           </p>
         </Container>
       </section>
 
-      {/* INFO */}
-      <section className="py-24">
+      {/* INFO CARDS */}
+      <section className="py-20 bg-white">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            <InfoCard icon={<Mail />} title="Email Address" text="allcarezacc@gmail.com" />
-            <InfoCard icon={<Phone />} title="Phone Number" text="+91 6291653171" />
-            <InfoCard icon={<MapPin />} title="Office Location" text="Hatiara, New Market, Kolkata-700157" />
-            <InfoCard icon={<Clock />} title="Working Hours" text="Mon – Sat: 11AM – 8PM" />
+            <InfoCard icon={<Mail />} title="Email" text="allcarezacc@gmail.com" />
+            <InfoCard icon={<Phone />} title="Phone" text="+91 6291653171" />
+            <InfoCard icon={<MapPin />} title="Location" text="Hatiara, New Market, Kolkata-700157" />
+            <InfoCard icon={<Clock />} title="Hours" text="Mon – Sat: 11AM – 8PM" />
           </div>
         </Container>
       </section>
 
-      {/* FORM */}
-      <section className="py-28 bg-gray-50">
+      {/* CONTACT FORM */}
+      <section className="py-24 bg-[#fff0e0]">
         <Container>
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 gap-16">
+
+            {/* LEFT SIDE (TEXT + IMAGE BELOW) */}
             <div>
-              <h2 className="text-4xl font-extrabold mb-4">Get In Touch With Us</h2>
-              <p className="text-gray-600 mb-8">
-                Fill out the form and our team will get back to you shortly.
+              <h2 className="text-4xl font-bold text-[#0c3750] mb-4">
+                Get In Touch
+              </h2>
+              <p className="text-[#0c3750]">
+                Fill the form and our team will contact you shortly.
               </p>
+
+              {/* SQUARE PROFILE IMAGE */}
+              <div className="mt-6">
+                <img
+                  src="https://res.cloudinary.com/dhd5do52g/image/upload/v1773840294/PK_txctsj.png"
+                  alt="Profile"
+                  className="w-120 h-120 object-cover rounded-xl shadow-lg border-4 border-orange-400"
+                />
+              </div>
             </div>
 
+            {/* FORM */}
             <motion.form
               ref={formRef}
               onSubmit={handleSubmit}
-              className="bg-white/70 backdrop-blur-md p-12 rounded-3xl shadow-2xl space-y-6 border"
-              initial={{ y: 50, opacity: 0 }}
-              whileInView={{ y: 0, opacity: 1 }}
+              className="bg-white p-10 rounded-2xl shadow-xl space-y-6"
             >
               <Input label="Name" name="name" type="text" required />
               <Input label="Email" name="email" type="email" required />
-              <Input label="Phone Number" name="phone" type="text" />
+              <Input label="Phone" name="phone" type="text" />
               <Textarea label="Message" name="message" required />
 
-              <motion.button
+              <button
                 type="submit"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="w-full bg-gradient-to-r from-blue-500 to-orange-400 text-white py-4 rounded-xl font-semibold shadow-lg"
+                className="w-full bg-orange-500 text-white py-4 rounded-xl font-semibold hover:bg-orange-600 transition"
               >
                 Send Message
-              </motion.button>
+              </button>
             </motion.form>
+
           </div>
         </Container>
       </section>
+
+      {/* GOOGLE MAP */}
+      <section className="py-20 bg-white">
+        <Container>
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <iframe
+              src="https://www.google.com/maps?q=Hatiara%20New%20Market%20Kolkata%20700157&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              loading="lazy"
+            ></iframe>
+          </div>
+        </Container>
+      </section>
+
+      {/* WHATSAPP BUTTON */}
+      <a
+        href="https://wa.me/916291653171"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 bg-green-500 text-white px-6 py-3 rounded-full shadow-lg hover:bg-green-600"
+      >
+        WhatsApp
+      </a>
+
     </PageWrapper>
   );
 };
 
-/* INFO CARD */
 const InfoCard = ({ icon, title, text }) => (
-  <motion.div
-    whileHover={{ y: -5 }}
-    className="bg-white rounded-3xl p-8 text-center shadow-lg"
-  >
-    <div className="w-16 h-16 mx-auto flex items-center justify-center bg-gradient-to-r from-blue-500 to-orange-400 text-white rounded-full mb-4">
+  <div className="bg-white p-8 rounded-2xl shadow text-center hover:shadow-lg">
+    <div className="w-14 h-14 flex items-center justify-center mx-auto mb-4 bg-orange-500 text-white rounded-full">
       {icon}
     </div>
-    <h3 className="font-semibold">{title}</h3>
+    <h3 className="font-semibold text-[#0c3750]">{title}</h3>
     <p className="text-gray-600 text-sm">{text}</p>
-  </motion.div>
+  </div>
 );
 
-/* INPUT */
 const Input = ({ label, type, name, required }) => (
   <div className="relative">
     <input
@@ -121,7 +150,7 @@ const Input = ({ label, type, name, required }) => (
       name={name}
       required={required}
       placeholder=" "
-      className="peer w-full rounded-xl border p-4 pt-6 focus:ring-2 focus:ring-orange-400 outline-none"
+      className="peer w-full border rounded-xl p-4 pt-6 outline-none focus:ring-2 focus:ring-orange-400"
     />
     <label className="absolute left-4 top-4 text-gray-400 text-sm peer-focus:text-orange-500">
       {label}
@@ -129,7 +158,6 @@ const Input = ({ label, type, name, required }) => (
   </div>
 );
 
-/* TEXTAREA */
 const Textarea = ({ label, name, required }) => (
   <div className="relative">
     <textarea
@@ -137,7 +165,7 @@ const Textarea = ({ label, name, required }) => (
       name={name}
       required={required}
       placeholder=" "
-      className="peer w-full rounded-xl border p-4 pt-6 focus:ring-2 focus:ring-orange-400 outline-none"
+      className="peer w-full border rounded-xl p-4 pt-6 outline-none focus:ring-2 focus:ring-orange-400"
     />
     <label className="absolute left-4 top-4 text-gray-400 text-sm peer-focus:text-orange-500">
       {label}

@@ -4,19 +4,21 @@ import { useNavigate } from "react-router-dom";
 const Services = () => {
   const navigate = useNavigate();
 
-  // Show only first 3 services
   const displayedServices = services.slice(0, 3);
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-[#FF6B00]/5">
+      
       {/* Section Title */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-heading font-bold text-[#b78c25]">
+        <h2 className="text-3xl font-heading font-bold text-[#003c50]">
           Our Professional Services
         </h2>
-        <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-          Expert accounting, taxation, and compliance solutions tailored for your business. 
-          We provide accurate bookkeeping, timely tax filings, and strategic advisory services to help your company grow efficiently.
+
+        <p className="text-[#003c50]/90 mt-3 max-w-2xl mx-auto leading-relaxed">
+          Expert accounting, taxation, and compliance solutions tailored for your business.
+          We provide accurate bookkeeping, timely tax filings, and strategic advisory services
+          to help your company grow efficiently.
         </p>
       </div>
 
@@ -25,46 +27,60 @@ const Services = () => {
         {displayedServices.map((service) => (
           <div
             key={service.title}
-            className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+            className="
+              rounded-2xl overflow-hidden
+              border border-[#FF6B00]/30
+              shadow-sm hover:shadow-lg
+              transition-all duration-300 hover:-translate-y-1
+              bg-white
+            "
           >
-            {/* Gradient Border */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-orange-400 rounded-2xl p-1 pointer-events-none"></div>
-
-            {/* Card Content */}
-            <div className="bg-white rounded-2xl overflow-hidden relative z-10">
-              {/* Image */}
-              <div className="h-40 w-full bg-gray-200">
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="p-6">
-                {/* Gradient Title */}
-                <h3 className="font-heading font-bold text-xl bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-orange-400">
-                  {service.title}
-                </h3>
-                <p className="text-gray-600 text-sm mt-2">
-                  {service.description}
-                </p>
-              </div>
+            
+            {/* Image */}
+            <div className="h-40 w-full bg-gray-200 overflow-hidden">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="h-full w-full object-cover hover:scale-105 transition duration-300"
+              />
             </div>
+
+            {/* Content */}
+            <div className="p-6">
+
+              {/* Title */}
+              <h3 className="font-heading font-bold text-xl text-[#003c50]">
+                {service.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+                {service.description}
+              </p>
+
+            </div>
+
           </div>
         ))}
       </div>
 
-      {/* Add More Button */}
-      <div className="text-center mt-10">
+      {/* Button */}
+      <div className="text-center mt-12">
         <button
           onClick={() => navigate("/services")}
-          className="px-8 py-3 rounded-full font-semibold text-white bg-gradient-to-r from-blue-500 to-orange-400 hover:scale-105 transition-transform duration-300"
+          className="
+            px-8 py-3 rounded-full font-semibold text-white
+            bg-[#FF6B00]
+            hover:bg-[#E65C00]
+            hover:scale-105
+            shadow-md hover:shadow-lg
+            transition-all duration-300
+          "
         >
-          Add More
+          View All Services
         </button>
       </div>
+
     </section>
   );
 };

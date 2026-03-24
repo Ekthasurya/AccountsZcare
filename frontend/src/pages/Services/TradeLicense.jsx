@@ -1,67 +1,158 @@
-// pages/services/TradeLicense.jsx
+// pages/services/TradeLicenseServices.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaBuilding, FaRegFileAlt, FaCheckCircle } from "react-icons/fa";
+import {
+  FaFileSignature,
+  FaSyncAlt,
+  FaEdit,
+  FaBuilding,
+  FaLaptop,
+  FaGlobe
+} from "react-icons/fa";
 
-const TradeLicense = () => {
+const TradeLicenseServices = () => {
   return (
-    <section className="py-28 bg-gray-50 min-h-screen text-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Page Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-[#0077FF] to-[#FF7F00]">
-          Trade License Services (All Over India)
-        </h1>
+    <section className="min-h-screen">
 
-        {/* Introduction */}
-        <p className="text-lg md:text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-          At AccountsZ CARE, we provide end-to-end Trade License Services across all states and cities in India, helping businesses operate legally and smoothly as per local municipal laws. Our expert-driven process ensures timely approvals, accurate documentation, and hassle-free compliance.
-        </p>
+      {/* Hero Section */}
+      <div
+        className="relative h-[60vh] flex items-center justify-center text-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1554224154-26032ffc0d07')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Services Include Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaBuilding className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">New Trade License Registration</h3>
-            <p className="text-gray-600">Complete support for obtaining a new trade license for shops, offices, factories, and commercial establishments.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaRegFileAlt className="text-[#FF7F00] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Renewal & Amendments</h3>
-            <p className="text-gray-600">Timely renewal, amendments, or modifications of trade licenses to ensure compliance and avoid penalties.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaCheckCircle className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Pan-India Support</h3>
-            <p className="text-gray-600">Trade license services available across all states, UTs, and municipal corporations in India, online or offline.</p>
-          </div>
-        </div>
+        <div className="relative z-10 max-w-3xl px-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+            Trade License Services
+          </h1>
 
-        {/* Who We Serve */}
-        <div className="mb-12 bg-gradient-to-r from-[#0077FF]/20 via-[#FF7F00]/20 to-[#0077FF]/20 rounded-3xl p-10 shadow-inner text-center border border-gray-100">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Who We Serve</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-            <li>Shops & Commercial Establishments</li>
-            <li>Traders & Service Providers</li>
-            <li>Startups & Small Businesses</li>
-            <li>Firms, Companies & Proprietors</li>
-          </ul>
-          <p className="text-gray-700 font-medium">
-            With AccountsZ CARE, obtaining and managing your Trade License becomes simple, compliant, and stress-free—no matter where your business is located in India.
+          <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+            At AccountsZ CARE, we provide end-to-end Trade License Services
+            across all states and cities in India, helping businesses operate
+            legally and smoothly as per local municipal laws.
           </p>
         </div>
+      </div>
 
-        {/* Back Button */}
-        <div className="text-center">
-          <Link
-            to="/services"
-            className="inline-block bg-gradient-to-r from-[#0077FF] to-[#FF7F00] text-white px-12 py-4 rounded-3xl font-semibold shadow-xl hover:opacity-90 transition"
-          >
-            Back to Services
-          </Link>
+      {/* Main Content */}
+      <div
+        className="py-20"
+        style={{ backgroundColor: "#fff8f2", color: "#003b4d" }}
+      >
+        <div className="max-w-5xl mx-auto px-6">
+
+          {/* Intro */}
+          <div className="mb-12">
+            <p className="text-lg leading-relaxed">
+              Our expert-driven process ensures timely approvals, accurate
+              documentation, and hassle-free compliance.
+            </p>
+          </div>
+
+          {/* Services */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6">
+              Our Trade License Services Include
+            </h2>
+
+            <div className="space-y-6 text-lg">
+
+              <div className="flex items-start gap-4">
+                <FaFileSignature className="text-2xl mt-1" />
+                <p>
+                  <strong>New Trade License Registration:</strong> Complete
+                  support for obtaining a new trade license for shops,
+                  offices, factories, and commercial establishments.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaSyncAlt className="text-2xl mt-1" />
+                <p>
+                  <strong>Trade License Renewal:</strong> Timely renewal of
+                  existing trade licenses to avoid penalties or business
+                  disruption.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaEdit className="text-2xl mt-1" />
+                <p>
+                  <strong>Amendment / Modification:</strong> Changes in
+                  business name, address, nature of business, ownership,
+                  or other license details.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaBuilding className="text-2xl mt-1" />
+                <p>
+                  <strong>Municipal Compliance Support:</strong> Handling
+                  documentation and coordination with local municipal
+                  authorities.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaLaptop className="text-2xl mt-1" />
+                <p>
+                  <strong>Online & Offline Application Assistance:</strong>
+                  End-to-end application filing through applicable state
+                  or municipal portals.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaGlobe className="text-2xl mt-1" />
+                <p>
+                  <strong>Pan-India Service Coverage:</strong> Trade
+                  license services available across all states, UTs,
+                  and municipal corporations in India.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Who We Serve */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">
+              Who We Serve
+            </h2>
+
+            <ul className="list-disc list-inside space-y-3 text-lg">
+              <li>Shops & Commercial Establishments</li>
+              <li>Traders & Service Providers</li>
+              <li>Startups & Small Businesses</li>
+              <li>Firms, Companies & Proprietors</li>
+            </ul>
+
+            <p className="mt-6 text-lg font-medium">
+              With AccountsZ CARE, obtaining and managing your Trade
+              License becomes simple, compliant, and stress-free —
+              no matter where your business is located in India.
+            </p>
+          </div>
+
+          {/* Back Button */}
+          <div className="text-center">
+            <Link
+              to="/services"
+              className="inline-block bg-[#003b4d] text-white px-12 py-4 rounded-2xl font-semibold hover:opacity-90 transition"
+            >
+              Back to Services
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>
   );
 };
 
-export default TradeLicense;
+export default TradeLicenseServices;

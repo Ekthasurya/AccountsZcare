@@ -14,7 +14,7 @@ const slides = [
     description:
       "We take care of your accounts, taxes, and compliance—so you can focus on what matters most.",
     image:
-      "https://res.cloudinary.com/dhd5do52g/image/upload/v1769883564/hero-image_cdfkmu.webp",
+      "https://res.cloudinary.com/dhd5do52g/image/upload/v1773815092/ChatGPT_Image_Mar_9_2026_01_33_06_PM_gsmero.png",
   },
   {
     title: (
@@ -26,7 +26,7 @@ const slides = [
     description:
       "From startups to enterprises, we design financial systems that grow with your business.",
     image:
-      "https://res.cloudinary.com/dhd5do52g/image/upload/v1769884164/How-to-Prepare-for-a-Team-Meeting_Content-image2-min-1024x569_hkbyrb.webp",
+      "https://res.cloudinary.com/dhd5do52g/image/upload/v1773815163/Pngtree_business_growth_concept_with_digital_16656703.jpg_un2c6v.jpg",
   },
   {
     title: (
@@ -38,7 +38,7 @@ const slides = [
     description:
       "Stay compliant with evolving regulations while focusing on what matters most—your growth.",
     image:
-      "https://res.cloudinary.com/dhd5do52g/image/upload/v1768159103/pexels-photo-3182763_gvdx6s.jpg",
+      "https://res.cloudinary.com/dhd5do52g/image/upload/v1773815108/Pngtree_accountant_s_desk_with_laptop_19675642.jpg_nmxhv2.jpg",
   },
 ];
 

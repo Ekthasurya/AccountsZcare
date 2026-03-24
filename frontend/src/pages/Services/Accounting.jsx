@@ -1,74 +1,165 @@
 // pages/services/Accounting.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaBook, FaCalculator, FaChartLine } from "react-icons/fa";
+import {
+  FaBook,
+  FaBalanceScale,
+  FaLaptop,
+  FaFileInvoiceDollar,
+  FaPercent,
+  FaUsers,
+  FaChartBar
+} from "react-icons/fa";
 
 const Accounting = () => {
   return (
-    <section className="relative py-28 bg-gray-50 min-h-screen text-gray-900">
-      <div className="max-w-6xl mx-auto px-6">
-        {/* Page Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-8 text-center text-gradient bg-gradient-to-r from-[#0077FF] to-[#FF7F00] bg-clip-text text-transparent">
-          Accounting & Bookkeeping Services
-        </h1>
+    <section className="min-h-screen">
 
-        {/* Intro / Hero */}
-        <p className="text-lg md:text-xl text-gray-700 mb-12 text-center max-w-3xl mx-auto leading-relaxed">
-          At AccountsZ CARE, we provide accurate, reliable, and compliant accounting and bookkeeping services designed to give businesses complete financial clarity and peace of mind.
-        </p>
+      {/* Hero Section */}
+      <div
+        className="relative h-[60vh] flex items-center justify-center text-center text-white"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1554224155-6726b3ff858f')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        {/* Info Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaBook className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Daily Bookkeeping</h3>
-            <p className="text-gray-600">Recording all sales, purchases, receipts, and payments with proper classification for accuracy.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaCalculator className="text-[#FF7F00] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Ledger & Reconciliation</h3>
-            <p className="text-gray-600">Bank, cash, vendor, and customer reconciliation to ensure accuracy and transparency.</p>
-          </div>
-          <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-center text-center border border-gray-200 hover:shadow-2xl transition">
-            <FaChartLine className="text-[#0077FF] text-5xl mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Financial Statements</h3>
-            <p className="text-gray-600">Preparation of Profit & Loss Account, Balance Sheet, and Cash Flow Statements for business insights.</p>
-          </div>
-        </div>
+        <div className="relative z-10 max-w-3xl px-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold mb-6">
+            Accounting & Bookkeeping Services
+          </h1>
 
-        {/* Detailed Description */}
-        <div className="mb-12 bg-white rounded-3xl shadow-xl p-10 border border-gray-200">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Our Services Include</h2>
-          <ul className="list-disc list-inside space-y-3 text-gray-700 leading-relaxed">
-            <li><strong>Accounting Software Support:</strong> Expert handling of Tally, Zoho Books, Busy, and more.</li>
-            <li><strong>GST-Ready Accounting:</strong> Books maintained in line with GST rules for smooth compliance.</li>
-            <li><strong>Debtors & Creditors Management:</strong> Track receivables and payables to improve cash flow.</li>
-            <li><strong>MIS & Management Reports:</strong> Monthly & quarterly reports for better financial control.</li>
-          </ul>
-        </div>
-
-        {/* Who We Serve */}
-        <div className="mb-12 bg-gradient-to-r from-[#0077FF]/20 via-[#FF7F00]/20 to-[#0077FF]/20 rounded-3xl p-10 shadow-inner text-center border border-gray-100">
-          <h2 className="text-2xl font-semibold text-blue-800 mb-4">Who We Serve</h2>
-          <ul className="list-disc list-inside space-y-2 text-gray-700 mb-6">
-            <li>Small & Medium Businesses</li>
-            <li>Startups & Professionals</li>
-            <li>Traders, Manufacturers & Service Providers</li>
-            <li>Individuals & Firms</li>
-          </ul>
-          <p className="text-gray-700 font-medium">
-            With AccountsZ CARE, your accounts are not just maintained — they are managed with care, clarity, and compliance.
+          <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
+            At AccountsZ CARE, we provide accurate, reliable, and compliant
+            Accounting & Bookkeeping Services designed to give businesses
+            complete financial clarity and peace of mind.
           </p>
         </div>
+      </div>
 
-        {/* Back Button */}
-        <div className="text-center">
-          <Link
-            to="/services"
-            className="inline-block bg-gradient-to-r from-[#0077FF] to-[#FF7F00] text-white px-12 py-4 rounded-3xl font-semibold shadow-xl hover:opacity-90 transition"
-          >
-            Back to Services
-          </Link>
+      {/* Main Content */}
+      <div
+        className="py-20"
+        style={{ backgroundColor: "#fff8f2", color: "#003b4d" }}
+      >
+        <div className="max-w-5xl mx-auto px-6">
+
+          {/* What We Do */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-4">
+              What We Do
+            </h2>
+
+            <p className="text-lg leading-relaxed">
+              We manage your day-to-day financial records with precision and
+              confidentiality, delivering structured, well-organized accounts
+              that support informed decision-making.
+            </p>
+          </div>
+
+          {/* Our Services */}
+          <div className="mb-12">
+            <h2 className="text-3xl font-bold mb-6">
+              Our Services Include
+            </h2>
+
+            <div className="space-y-6 text-lg">
+
+              <div className="flex items-start gap-4">
+                <FaBook className="text-2xl mt-1" />
+                <p>
+                  <strong>Daily / Monthly Bookkeeping:</strong> Recording of all
+                  sales, purchases, receipts, and payments with proper
+                  classification.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaBalanceScale className="text-2xl mt-1" />
+                <p>
+                  <strong>Ledger Maintenance & Reconciliation:</strong> Bank,
+                  cash, vendor, and customer reconciliation to ensure accuracy
+                  and transparency.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaLaptop className="text-2xl mt-1" />
+                <p>
+                  <strong>Accounting Software Support:</strong> Expert handling
+                  of Tally, Zoho Books, Busy, and other accounting software.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaFileInvoiceDollar className="text-2xl mt-1" />
+                <p>
+                  <strong>Financial Statements Preparation:</strong> Preparation
+                  of Profit & Loss Account, Balance Sheet, and Cash Flow
+                  Statements.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaPercent className="text-2xl mt-1" />
+                <p>
+                  <strong>GST-Ready Accounting:</strong> Books maintained in
+                  line with GST rules for smooth return filing and compliance.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaUsers className="text-2xl mt-1" />
+                <p>
+                  <strong>Debtors & Creditors Management:</strong> Tracking
+                  receivables and payables to improve cash flow and reduce
+                  delays.
+                </p>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <FaChartBar className="text-2xl mt-1" />
+                <p>
+                  <strong>MIS & Management Reports:</strong> Customized monthly
+                  and quarterly reports for better financial control.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+          {/* Who We Serve */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold mb-6">
+              Who We Serve
+            </h2>
+
+            <ul className="list-disc list-inside space-y-3 text-lg">
+              <li>Small & Medium Businesses</li>
+              <li>Startups & Professionals</li>
+              <li>Traders, Manufacturers & Service Providers</li>
+              <li>Individuals & Firms</li>
+            </ul>
+
+            <p className="mt-6 text-lg font-medium">
+              With AccountsZ CARE, your accounts are not just maintained —
+              they are managed with care, clarity, and compliance.
+            </p>
+          </div>
+
+          {/* Back Button */}
+          <div className="text-center">
+            <Link
+              to="/services"
+              className="inline-block bg-[#003b4d] text-white px-12 py-4 rounded-2xl font-semibold hover:opacity-90 transition"
+            >
+              Back to Services
+            </Link>
+          </div>
+
         </div>
       </div>
     </section>
