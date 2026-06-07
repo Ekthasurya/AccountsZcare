@@ -24,12 +24,12 @@ const CTA = () => {
                  bg-fixed bg-center bg-cover"
       style={{
         backgroundImage:
-          "url('https://images.pexels.com/photos/6693650/pexels-photo-6693650.jpeg')",
+          "url('https://res.cloudinary.com/dhd5do52g/image/upload/v1780855983/handsake_photo_mfh4uy.png')",
       }}
     >
       
       {/* Stronger Overlay for Better Text Clarity */}
-      <div className="absolute inset-0 bg-black/75 pointer-events-none"></div>
+      <div className="absolute inset-0  pointer-events-none"></div>
 
       {/* Decorative Shapes */}
       <motion.div
