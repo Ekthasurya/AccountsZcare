@@ -9,17 +9,61 @@ import { FaBook, FaFileInvoiceDollar, FaMoneyCheckAlt, FaReceipt, FaUsers, FaIdC
 import { Link } from "react-router-dom";
 
 const services = [
-  { title: "Accounting & Bookkeeping", description: "Maintain accurate financial records.", link: "/services/accounting", icon: <FaBook className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "Income Tax Services", description: "Expert income tax filing & advisory.", link: "/services/income-tax", icon: <FaFileInvoiceDollar className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "TDS Return Services", description: "Timely TDS return filing & compliance.", link: "/services/tds-return", icon: <FaMoneyCheckAlt className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "GST Services", description: "Seamless GST compliance & returns.", link: "/services/gst", icon: <FaReceipt className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "PF & ESIC Services", description: "Employee PF & ESIC compliance.", link: "/services/pf-esic", icon: <FaUsers className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "PAN & TAN Services", description: "PAN/TAN registration & assistance.", link: "/services/pan-tan", icon: <FaIdCard className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "Trade License Services", description: "All India trade license services.", link: "/services/trade-license", icon: <FaBuilding className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "Audit & Assurance", description: "Comprehensive audit & assurance services.", link: "/services/audit", icon: <FaClipboardCheck className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
-  { title: "DSC Registration", description: "Digital signature certificate registration.", link: "/services/dsc-registration", icon: <FaKey className="w-12 h-12 text-orange-500 mx-auto mb-4" /> },
+  {
+    title: "Accounting & Bookkeeping",
+    description: "Maintain accurate financial records.",
+    link: "/services/accounting",
+    icon: <FaBook className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "Income Tax Services",
+    description: "Expert income tax filing & advisory.",
+    link: "/services/income-tax",
+    icon: <FaFileInvoiceDollar className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "TDS Return Services",
+    description: "Timely TDS return filing & compliance.",
+    link: "/services/tds-return",
+    icon: <FaMoneyCheckAlt className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "GST Services",
+    description: "Seamless GST compliance & returns.",
+    link: "/services/gst",
+    icon: <FaReceipt className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "PF & ESIC Services",
+    description: "Employee PF & ESIC compliance.",
+    link: "/services/pf-esic",
+    icon: <FaUsers className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "PAN & TAN Services",
+    description: "PAN/TAN registration & assistance.",
+    link: "/services/pan-tan",
+    icon: <FaIdCard className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "Trade License Services",
+    description: "All India trade license services.",
+    link: "/services/trade-license",
+    icon: <FaBuilding className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "Audit & Assurance",
+    description: "Comprehensive audit & assurance services.",
+    link: "/services/audit",
+    icon: <FaClipboardCheck className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
+  {
+    title: "DSC Registration",
+    description: "Digital signature certificate registration.",
+    link: "/services/dsc-registration",
+    icon: <FaKey className="w-12 h-12 text-[#F88A0B] mx-auto mb-4" />,
+  },
 ];
-
 
 
 const Services = () => {
@@ -51,11 +95,22 @@ const Services = () => {
 
 
       {/* Services Section */}
- <section className="py-28" style={{ backgroundColor: "#fff8f2" }}>
+ <section className="py-28 bg-[#F8F8F8]">
   <Container>
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-[#0c3750]">
-      What We Offer
-    </h2>
+
+    {/* Section Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#2D2D2D]">
+        What We Offer
+      </h2>
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mt-4"></div>
+
+      <p className="mt-6 text-[#555555] max-w-2xl mx-auto">
+        Comprehensive accounting, taxation, compliance, and business support
+        services designed to help your business grow with confidence.
+      </p>
+    </div>
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
       {services.map((service, index) => (
@@ -67,37 +122,65 @@ const Services = () => {
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
           <Link to={service.link}>
-            <Card className="p-8 rounded-3xl shadow-xl hover:shadow-2xl transform hover:-translate-y-3 hover:bg-gradient-to-tr hover:from-[#0077FF] hover:to-[#FF7F00] transition-all duration-500 bg-white border border-gray-200 text-center">
-
+            <Card
+              className="
+                p-8
+                rounded-3xl
+                bg-white
+                border border-[#2DBCC7]/20
+                shadow-lg
+                hover:shadow-2xl
+                hover:-translate-y-3
+                hover:border-[#2DBCC7]
+                transition-all duration-500
+                text-center
+                group
+              "
+            >
               {/* Icon */}
-              {service.icon}
+              <div className="flex justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                {service.icon}
+              </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-semibold text-[#0c3750] mb-4">
+              <h3 className="text-2xl font-semibold text-[#2D2D2D] mb-4">
                 {service.title}
               </h3>
 
-              {/* Short Description */}
-              <p className="text-[#0c3750]">
+              {/* Accent Line */}
+              <div className="w-12 h-1 bg-[#2DBCC7] rounded-full mx-auto mb-4"></div>
+
+              {/* Description */}
+              <p className="text-[#555555] leading-relaxed">
                 {service.description}
               </p>
-
             </Card>
           </Link>
         </motion.div>
       ))}
     </div>
+
   </Container>
 </section>
 
 
       {/* Why Choose Us Section */}
-  <section className="py-28 bg-[fff0e0]">
+ <section className="py-28 bg-[#F8F8F8]">
   <Container>
+
     {/* Section Title */}
-    <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-[#0c3750]">
-      Why Choose AccountsZ CARE
-    </h2>
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-[#2D2D2D]">
+        Why Choose AccountsZ CARE
+      </h2>
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mt-4"></div>
+
+      <p className="mt-6 text-[#555555] max-w-2xl mx-auto">
+        A trusted partner delivering reliable, transparent, and professional
+        accounting solutions tailored to your business needs.
+      </p>
+    </div>
 
     {/* Features Grid */}
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -112,25 +195,55 @@ const Services = () => {
         { icon: <FaStar />, title: "Reliable & Trusted Complete Accounting Solutions" },
       ].map((feature, index) => {
         const Icon = feature.icon;
+
         return (
-          <div key={index} className="bg-white rounded-3xl p-8 shadow-xl flex flex-col items-center text-center hover:scale-105 transform transition-all duration-300 border border-orange-400">
-            <div className="text-5xl mb-4 text-orange-500">
-              {React.cloneElement(Icon, { className: "w-12 h-12 mx-auto" })}
+          <div
+            key={index}
+            className="
+              bg-white
+              rounded-3xl
+              p-8
+              shadow-lg
+              hover:shadow-2xl
+              hover:-translate-y-2
+              transition-all duration-300
+              border border-[#2DBCC7]/20
+              hover:border-[#2DBCC7]
+              flex flex-col items-center
+              text-center
+            "
+          >
+            {/* Icon */}
+            <div className="text-[#F88A0B] mb-5">
+              {React.cloneElement(Icon, {
+                className:
+                  "w-12 h-12 mx-auto transition-transform duration-300",
+              })}
             </div>
-            <h3 className="text-xl font-semibold text-[#0c3750]">{feature.title}</h3>
+
+            {/* Title */}
+            <h3 className="text-xl font-semibold text-[#2D2D2D] leading-snug">
+              {feature.title}
+            </h3>
           </div>
         );
       })}
     </div>
 
     {/* Highlighted Central Line */}
-    <div className="mt-16 text-center">
-      <p className="text-2xl font-bold text-orange-500">
-        AccountsZ CARE – Complete Accounting Solution You Can Trust
+    <div className="mt-20 text-center">
+      <p className="text-2xl md:text-3xl font-bold text-[#2D2D2D]">
+        AccountsZ CARE –
+        <span className="text-[#F88A0B]">
+          {" "}Complete Accounting Solution You Can Trust
+        </span>
       </p>
     </div>
+
   </Container>
 </section>
+
+
 
 
 

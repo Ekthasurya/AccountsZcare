@@ -1,3 +1,4 @@
+
 // pages/services/TradeLicenseServices.jsx
 import React from "react";
 import { Link } from "react-router-dom";
@@ -7,13 +8,12 @@ import {
   FaEdit,
   FaBuilding,
   FaLaptop,
-  FaGlobe
+  FaGlobe,
 } from "react-icons/fa";
 
 const TradeLicenseServices = () => {
   return (
     <section className="min-h-screen">
-
       {/* Hero Section */}
       <div
         className="relative h-[60vh] flex items-center justify-center text-center text-white"
@@ -39,111 +39,166 @@ const TradeLicenseServices = () => {
         </div>
       </div>
 
-      {/* Main Content */}
-      <div
-        className="py-20"
-        style={{ backgroundColor: "#fff8f2", color: "#003b4d" }}
-      >
-        <div className="max-w-5xl mx-auto px-6">
+      <div className="py-20 bg-[#F8F8F8] text-[#2D2D2D]">
+        <div className="max-w-6xl mx-auto px-6">
 
-          {/* Intro */}
-          <div className="mb-12">
-            <p className="text-lg leading-relaxed">
+          {/* Introduction */}
+          <div className="mb-16 text-center">
+            <h2 className="text-4xl font-bold text-[#2D2D2D] mb-6">
+              Professional Trade License Compliance Solutions
+            </h2>
+
+            <p className="text-lg text-[#555] max-w-4xl mx-auto leading-relaxed">
               Our expert-driven process ensures timely approvals, accurate
-              documentation, and hassle-free compliance.
+              documentation, and hassle-free compliance with municipal
+              regulations, enabling businesses to operate legally and
+              confidently across India.
             </p>
           </div>
 
           {/* Services */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">
+          <div className="mb-20">
+            <h2 className="text-4xl font-bold text-center text-[#2D2D2D] mb-12">
               Our Trade License Services Include
             </h2>
 
-            <div className="space-y-6 text-lg">
+            <div className="grid md:grid-cols-2 gap-6">
 
-              <div className="flex items-start gap-4">
-                <FaFileSignature className="text-2xl mt-1" />
-                <p>
-                  <strong>New Trade License Registration:</strong> Complete
-                  support for obtaining a new trade license for shops,
-                  offices, factories, and commercial establishments.
-                </p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/30 shadow-sm hover:shadow-lg transition">
+                <FaFileSignature className="text-4xl text-[#2DBCC7] mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg text-[#2D2D2D] mb-2">
+                    New Trade License Registration
+                  </h3>
+                  <p className="text-[#666]">
+                    Complete support for obtaining a new trade license
+                    for shops, offices, factories, and commercial
+                    establishments.
+                  </p>
+                </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <FaSyncAlt className="text-2xl mt-1" />
-                <p>
-                  <strong>Trade License Renewal:</strong> Timely renewal of
-                  existing trade licenses to avoid penalties or business
-                  disruption.
-                </p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/30 shadow-sm hover:shadow-lg transition">
+                <FaSyncAlt className="text-4xl text-[#2DBCC7] mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg text-[#2D2D2D] mb-2">
+                    Trade License Renewal
+                  </h3>
+                  <p className="text-[#666]">
+                    Timely renewal of existing trade licenses to avoid
+                    penalties, interruptions, or compliance issues.
+                  </p>
+                </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <FaEdit className="text-2xl mt-1" />
-                <p>
-                  <strong>Amendment / Modification:</strong> Changes in
-                  business name, address, nature of business, ownership,
-                  or other license details.
-                </p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/30 shadow-sm hover:shadow-lg transition">
+                <FaEdit className="text-4xl text-[#2DBCC7] mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg text-[#2D2D2D] mb-2">
+                    Amendment / Modification
+                  </h3>
+                  <p className="text-[#666]">
+                    Changes in business name, address, ownership,
+                    nature of business, or other license details.
+                  </p>
+                </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <FaBuilding className="text-2xl mt-1" />
-                <p>
-                  <strong>Municipal Compliance Support:</strong> Handling
-                  documentation and coordination with local municipal
-                  authorities.
-                </p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/30 shadow-sm hover:shadow-lg transition">
+                <FaBuilding className="text-4xl text-[#2DBCC7] mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg text-[#2D2D2D] mb-2">
+                    Municipal Compliance Support
+                  </h3>
+                  <p className="text-[#666]">
+                    Complete assistance with documentation,
+                    inspections, and coordination with municipal
+                    authorities.
+                  </p>
+                </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <FaLaptop className="text-2xl mt-1" />
-                <p>
-                  <strong>Online & Offline Application Assistance:</strong>
-                  End-to-end application filing through applicable state
-                  or municipal portals.
-                </p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/30 shadow-sm hover:shadow-lg transition">
+                <FaLaptop className="text-4xl text-[#2DBCC7] mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg text-[#2D2D2D] mb-2">
+                    Online & Offline Application Assistance
+                  </h3>
+                  <p className="text-[#666]">
+                    End-to-end filing support through applicable
+                    state government and municipal portals.
+                  </p>
+                </div>
               </div>
 
-              <div className="flex items-start gap-4">
-                <FaGlobe className="text-2xl mt-1" />
-                <p>
-                  <strong>Pan-India Service Coverage:</strong> Trade
-                  license services available across all states, UTs,
-                  and municipal corporations in India.
-                </p>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/30 shadow-sm hover:shadow-lg transition">
+                <FaGlobe className="text-4xl text-[#2DBCC7] mt-1" />
+                <div>
+                  <h3 className="font-bold text-lg text-[#2D2D2D] mb-2">
+                    Pan-India Service Coverage
+                  </h3>
+                  <p className="text-[#666]">
+                    Trade license services available across all states,
+                    union territories, and municipal corporations in India.
+                  </p>
+                </div>
               </div>
 
             </div>
           </div>
 
           {/* Who We Serve */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-6">
+          <div className="bg-white rounded-3xl p-10 border border-[#C5C7CC]/40 shadow-sm mb-20">
+            <h2 className="text-4xl font-bold text-center text-[#2D2D2D] mb-10">
               Who We Serve
             </h2>
 
-            <ul className="list-disc list-inside space-y-3 text-lg">
-              <li>Shops & Commercial Establishments</li>
-              <li>Traders & Service Providers</li>
-              <li>Startups & Small Businesses</li>
-              <li>Firms, Companies & Proprietors</li>
-            </ul>
+            <div className="grid md:grid-cols-2 gap-5">
+              {[
+                "Shops & Commercial Establishments",
+                "Traders & Service Providers",
+                "Startups & Small Businesses",
+                "Firms, Companies & Proprietors",
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center gap-3 text-lg text-[#444]"
+                >
+                  <span className="text-[#2DBCC7] text-xl font-bold">✓</span>
+                  {item}
+                </div>
+              ))}
+            </div>
 
-            <p className="mt-6 text-lg font-medium">
-              With AccountsZ CARE, obtaining and managing your Trade
-              License becomes simple, compliant, and stress-free —
-              no matter where your business is located in India.
+            <p className="mt-10 text-center text-lg text-[#555] leading-relaxed">
+              With{" "}
+              <span className="font-bold text-[#F88A0B]">
+                AccountsZ CARE
+              </span>
+              , obtaining and managing your Trade License becomes
+              simple, compliant, and stress-free — no matter where
+              your business is located in India.
             </p>
           </div>
 
-          {/* Back Button */}
+          {/* CTA */}
           <div className="text-center">
             <Link
               to="/services"
-              className="inline-block bg-[#003b4d] text-white px-12 py-4 rounded-2xl font-semibold hover:opacity-90 transition"
+              className="
+                inline-block
+                bg-[#F88A0B]
+                text-white
+                px-12
+                py-4
+                rounded-2xl
+                font-semibold
+                shadow-lg
+                hover:bg-[#E67E09]
+                hover:scale-105
+                transition-all
+                duration-300
+              "
             >
               Back to Services
             </Link>

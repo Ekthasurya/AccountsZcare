@@ -34,90 +34,188 @@ const Contact = () => {
     <PageWrapper>
 
       {/* HERO */}
-      <section className="py-24 text-center bg-[#fff0e0]">
-        <Container>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-[#0c3750] mb-4">
-            Contact Us
-          </h1>
-          <p className="text-lg text-[#0c3750] max-w-2xl mx-auto">
-            We’re here to help. Reach out anytime for support or inquiries.
-          </p>
-        </Container>
-      </section>
+{/* HERO IMAGE */}
+<section
+  className="h-[60vh] bg-cover bg-center"
+  style={{
+    backgroundImage:
+      "url('https://res.cloudinary.com/dhd5do52g/image/upload/v1781454861/Gemini_Generated_Image_yatfpuyatfpuyatf_zomgl2.png')",
+  }}
+></section>
+
+{/* HERO CONTENT BELOW IMAGE */}
+<section className="py-16 bg-[#F8F8F8] text-center">
+  <Container>
+    <div className="max-w-3xl mx-auto">
+      <h1 className="text-5xl md:text-6xl font-extrabold text-[#2D2D2D] mb-6">
+        Contact Us
+      </h1>
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mb-6"></div>
+
+      <p className="text-lg md:text-xl text-[#555555] leading-relaxed">
+        We’re here to help. Reach out anytime for support, accounting,
+        taxation, compliance services, or business inquiries.
+      </p>
+    </div>
+  </Container>
+</section>
 
       {/* INFO CARDS */}
-      <section className="py-20 bg-white">
-        <Container>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            <InfoCard icon={<Mail />} title="Email" text="allcarezacc@gmail.com" />
-            <InfoCard icon={<Phone />} title="Phone" text="+91 6291653171" />
-            <InfoCard icon={<MapPin />} title="Location" text="Hatiara, New Market, Kolkata-700157" />
-            <InfoCard icon={<Clock />} title="Hours" text="Mon – Sat: 11AM – 8PM" />
-          </div>
-        </Container>
-      </section>
+      <section className="py-20 bg-[#F8F8F8]">
+        
+  <Container>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <InfoCard
+        icon={<Mail className="w-8 h-8 text-[#F88A0B]" />}
+        title="Email"
+        text="allcarezacc@gmail.com"
+      />
+
+      <InfoCard
+        icon={<Phone className="w-8 h-8 text-[#F88A0B]" />}
+        title="Phone"
+        text="+91 6291653171"
+      />
+
+      <InfoCard
+        icon={<MapPin className="w-8 h-8 text-[#F88A0B]" />}
+        title="Location"
+        text="Hatiara, New Market, Kolkata-700157"
+      />
+
+      <InfoCard
+        icon={<Clock className="w-8 h-8 text-[#F88A0B]" />}
+        title="Hours"
+        text="Mon – Sat: 11AM – 8PM"
+      />
+
+    </div>
+  </Container>
+</section>
 
       {/* CONTACT FORM */}
-      <section className="py-24 bg-[#fff0e0]">
-        <Container>
-          <div className="grid lg:grid-cols-2 gap-16">
+      <section className="py-24 bg-[#F8F8F8]">
+  <Container>
+    <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-            {/* LEFT SIDE (TEXT + IMAGE BELOW) */}
-            <div>
-              <h2 className="text-4xl font-bold text-[#0c3750] mb-4">
-                Get In Touch
-              </h2>
-              <p className="text-[#0c3750]">
-                Fill the form and our team will contact you shortly.
-              </p>
+      {/* LEFT SIDE */}
+      <div>
+        <h2 className="text-4xl md:text-5xl font-bold text-[#2D2D2D] mb-4">
+          Get In Touch
+        </h2>
 
-              {/* SQUARE PROFILE IMAGE */}
-              <div className="mt-6">
-                <img
-                  src="https://res.cloudinary.com/dhd5do52g/image/upload/v1773840294/PK_txctsj.png"
-                  alt="Profile"
-                  className="w-120 h-120 object-cover rounded-xl shadow-lg border-4 border-orange-400"
-                />
-              </div>
-            </div>
+        <div className="w-24 h-1 bg-[#2DBCC7] rounded-full mb-6"></div>
 
-            {/* FORM */}
-            <motion.form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              className="bg-white p-10 rounded-2xl shadow-xl space-y-6"
-            >
-              <Input label="Name" name="name" type="text" required />
-              <Input label="Email" name="email" type="email" required />
-              <Input label="Phone" name="phone" type="text" />
-              <Textarea label="Message" name="message" required />
+        <p className="text-[#555555] text-lg leading-relaxed">
+          Fill out the form and our team will get back to you shortly.
+          We're here to help with all your accounting, taxation, and
+          compliance needs.
+        </p>
 
-              <button
-                type="submit"
-                className="w-full bg-orange-500 text-white py-4 rounded-xl font-semibold hover:bg-orange-600 transition"
-              >
-                Send Message
-              </button>
-            </motion.form>
+        {/* PROFILE IMAGE */}
+        <div className="mt-8">
+          <img
+            src="https://res.cloudinary.com/dhd5do52g/image/upload/v1773840294/PK_txctsj.png"
+            alt="Profile"
+            className="
+              w-full
+              max-w-md
+              object-cover
+              rounded-3xl
+              shadow-xl
+              border-4
+              border-[#2DBCC7]/30
+              hover:border-[#2DBCC7]
+              transition-all duration-300
+            "
+          />
+        </div>
+      </div>
 
-          </div>
-        </Container>
-      </section>
+      {/* FORM */}
+      <motion.form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="
+          bg-white
+          p-10
+          rounded-3xl
+          shadow-xl
+          border
+          border-[#2DBCC7]/20
+          space-y-6
+        "
+      >
+        <Input label="Name" name="name" type="text" required />
+        <Input label="Email" name="email" type="email" required />
+        <Input label="Phone" name="phone" type="text" />
+        <Textarea label="Message" name="message" required />
+
+        <button
+          type="submit"
+          className="
+            w-full
+            bg-[#F88A0B]
+            text-white
+            py-4
+            rounded-xl
+            font-semibold
+            shadow-lg
+            hover:bg-[#E86F00]
+            hover:scale-[1.02]
+            transition-all duration-300
+          "
+        >
+          Send Message
+        </button>
+      </motion.form>
+
+    </div>
+  </Container>
+</section>
 
       {/* GOOGLE MAP */}
-      <section className="py-20 bg-white">
-        <Container>
-          <div className="rounded-xl overflow-hidden shadow-lg">
-            <iframe
-              src="https://www.google.com/maps?q=Hatiara%20New%20Market%20Kolkata%20700157&output=embed"
-              width="100%"
-              height="400"
-              style={{ border: 0 }}
-              loading="lazy"
-            ></iframe>
-          </div>
-        </Container>
-      </section>
+      <section className="py-20 bg-[#F8F8F8]">
+  <Container>
+
+    {/* Section Heading */}
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2D2D2D]">
+        Find Us
+      </h2>
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mt-4"></div>
+
+      <p className="mt-6 text-[#555555] max-w-2xl mx-auto">
+        Visit our office for personalized accounting, taxation, and business
+        advisory services.
+      </p>
+    </div>
+
+    {/* Google Map */}
+    <div
+      className="
+        rounded-3xl
+        overflow-hidden
+        shadow-xl
+        border
+        border-[#2DBCC7]/20
+      "
+    >
+      <iframe
+        src="https://www.google.com/maps?q=Hatiara%20New%20Market%20Kolkata%20700157&output=embed"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        loading="lazy"
+        title="AccountsZ CARE Location"
+      ></iframe>
+    </div>
+
+  </Container>
+</section>
 
       {/* WHATSAPP BUTTON */}
       <a

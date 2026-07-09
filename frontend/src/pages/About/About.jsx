@@ -3,6 +3,7 @@ import Container from "../../components/common/Container";
 import { FaCheckCircle } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 import {
   Briefcase,
@@ -92,32 +93,33 @@ const About = () => {
       </div>
     </section>
       {/* Company Overview */}
- <section className="py-20" style={{ backgroundColor: "#fff8f2" }}>
+ <section className="py-20 bg-[#F8F8F8]">
   <div className="max-w-6xl mx-auto px-6">
 
     {/* Heading */}
-    <h2
-      className="text-4xl md:text-5xl font-bold text-center mb-10"
-      style={{ color: "#063a53" }}
-    >
-      Company Overview
-    </h2>
+    <div className="text-center mb-12">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2D2D2D]">
+        Company Overview
+      </h2>
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mt-4"></div>
+    </div>
 
     {/* Content */}
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
       {/* Left */}
       <div>
-        <p className="mb-5 leading-relaxed" style={{ color: "#063a53" }}>
-          <strong>AccountsZ CARE</strong> is a professional accounting and
-          financial services firm dedicated to helping businesses manage their
-          finances with clarity, accuracy, and confidence. We believe that
-          proper accounting is the backbone of every successful business, and
-          our goal is to provide reliable, timely, and cost-effective solutions
-          tailored to our clients’ needs.
+        <p className="mb-5 leading-relaxed text-[#555555] text-lg">
+          <strong className="text-[#2D2D2D]">AccountsZ CARE</strong> is a
+          professional accounting and financial services firm dedicated to
+          helping businesses manage their finances with clarity, accuracy, and
+          confidence. We believe that proper accounting is the backbone of
+          every successful business, and our goal is to provide reliable,
+          timely, and cost-effective solutions tailored to our clients’ needs.
         </p>
 
-        <p className="mb-5 leading-relaxed" style={{ color: "#063a53" }}>
+        <p className="mb-5 leading-relaxed text-[#555555] text-lg">
           We offer end-to-end accounting support, including bookkeeping, GST
           compliance, income tax services, TDS, payroll, financial reporting,
           and business advisory services. Whether you are a startup, small
@@ -125,7 +127,7 @@ const About = () => {
           financial records remain compliant, organized, and stress-free.
         </p>
 
-        <p className="mb-5 leading-relaxed" style={{ color: "#063a53" }}>
+        <p className="mb-5 leading-relaxed text-[#555555] text-lg">
           At AccountsZ CARE, we focus on accuracy, transparency, and
           personalized service. We take the time to understand each client’s
           business and provide practical solutions that support growth and
@@ -134,9 +136,9 @@ const About = () => {
           your business journey.
         </p>
 
-        <p className="leading-relaxed" style={{ color: "#063a53" }}>
+        <p className="leading-relaxed text-[#555555] text-lg">
           Our mission is simple — to deliver{" "}
-          <span className="font-semibold">
+          <span className="font-semibold text-[#2DBCC7]">
             Complete Accounting Solutions
           </span>{" "}
           that allow our clients to focus on what they do best, while we take
@@ -146,72 +148,97 @@ const About = () => {
 
       {/* Right */}
       <div className="space-y-6">
-        <div className="bg-white p-6 rounded-xl shadow">
-          <h4 className="font-semibold text-lg mb-1" style={{ color: "#063a53" }}>
+
+        <div className="bg-white p-6 rounded-2xl shadow-lg border border-[#2DBCC7]/20 hover:border-[#2DBCC7] transition-all duration-300">
+          <h4 className="font-semibold text-lg mb-2 text-[#2D2D2D]">
             End-to-End Accounting
           </h4>
-          <p className="text-sm" style={{ color: "#063a53" }}>
+          <p className="text-[#555555]">
             All accounting services under one roof.
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow">
-          <h4 className="font-semibold text-lg mb-1" style={{ color: "#063a53" }}>
+        <div className="bg-white p-6 rounded-2xl shadow-lg border border-[#2DBCC7]/20 hover:border-[#2DBCC7] transition-all duration-300">
+          <h4 className="font-semibold text-lg mb-2 text-[#2D2D2D]">
             Compliance & Accuracy
           </h4>
-          <p className="text-sm" style={{ color: "#063a53" }}>
+          <p className="text-[#555555]">
             Fully compliant and error-free processes.
           </p>
         </div>
 
-        <div className="bg-white p-6 rounded-xl shadow">
-          <h4 className="font-semibold text-lg mb-1" style={{ color: "#063a53" }}>
+        <div className="bg-white p-6 rounded-2xl shadow-lg border border-[#2DBCC7]/20 hover:border-[#2DBCC7] transition-all duration-300">
+          <h4 className="font-semibold text-lg mb-2 text-[#2D2D2D]">
             Client-First Approach
           </h4>
-          <p className="text-sm" style={{ color: "#063a53" }}>
+          <p className="text-[#555555]">
             Personalized support for every business.
           </p>
         </div>
+
       </div>
     </div>
 
     {/* Stats */}
     <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-center mt-16">
-      <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-4xl font-bold" style={{ color: "#063a53" }}>10+</h3>
-        <p className="mt-2" style={{ color: "#063a53" }}>Years Experience</p>
+
+      <div className="bg-white p-8 rounded-2xl shadow-lg border border-[#2DBCC7]/20 hover:-translate-y-2 transition-all duration-300">
+        <h3 className="text-4xl font-bold text-[#2DBCC7]">10+</h3>
+        <p className="mt-2 text-[#555555]">Years Experience</p>
       </div>
 
-      <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-4xl font-bold" style={{ color: "#063a53" }}>250+</h3>
-        <p className="mt-2" style={{ color: "#063a53" }}>Happy Clients</p>
+      <div className="bg-white p-8 rounded-2xl shadow-lg border border-[#2DBCC7]/20 hover:-translate-y-2 transition-all duration-300">
+        <h3 className="text-4xl font-bold text-[#2DBCC7]">250+</h3>
+        <p className="mt-2 text-[#555555]">Happy Clients</p>
       </div>
 
-      <div className="bg-white p-8 rounded-xl shadow">
-        <h3 className="text-4xl font-bold" style={{ color: "#063a53" }}>99%</h3>
-        <p className="mt-2" style={{ color: "#063a53" }}>Accuracy Rate</p>
+      <div className="bg-white p-8 rounded-2xl shadow-lg border border-[#2DBCC7]/20 hover:-translate-y-2 transition-all duration-300">
+        <h3 className="text-4xl font-bold text-[#2DBCC7]">99%</h3>
+        <p className="mt-2 text-[#555555]">Accuracy Rate</p>
       </div>
+
     </div>
 
   </div>
 </section>
 
       {/* Mission & Vision */}
- <section className="py-24" style={{ backgroundColor: "#fff0e0", color: "#063a53" }}>
+<section className="py-24 bg-[#F8F8F8]">
   <Container>
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+    {/* Section Heading */}
+    <div className="text-center mb-16">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2D2D2D]">
+        Our Mission & Vision
+      </h2>
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mt-4"></div>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
       {/* Mission */}
-      <div className="bg-white rounded-2xl p-10 shadow-md">
-        <span className="text-sm font-semibold tracking-widest uppercase">
+      <div
+        className="
+          bg-white
+          rounded-3xl
+          p-10
+          shadow-lg
+          border border-[#2DBCC7]/20
+          hover:border-[#2DBCC7]
+          hover:-translate-y-2
+          transition-all duration-300
+        "
+      >
+        <span className="text-sm font-semibold tracking-widest uppercase text-[#F88A0B]">
           Our Mission
         </span>
 
-        <h3 className="text-3xl font-bold mt-4 mb-4">
+        <h3 className="text-3xl font-bold mt-4 mb-4 text-[#2D2D2D]">
           Driven by Accuracy & Trust
         </h3>
 
-        <p className="text-lg leading-relaxed">
+        <p className="text-lg leading-relaxed text-[#555555]">
           To deliver accurate, transparent, and reliable accounting and
           compliance services that empower businesses to operate confidently
           and grow sustainably.
@@ -219,16 +246,27 @@ const About = () => {
       </div>
 
       {/* Vision */}
-      <div className="bg-white rounded-2xl p-10 shadow-md">
-        <span className="text-sm font-semibold tracking-widest uppercase">
+      <div
+        className="
+          bg-white
+          rounded-3xl
+          p-10
+          shadow-lg
+          border border-[#2DBCC7]/20
+          hover:border-[#2DBCC7]
+          hover:-translate-y-2
+          transition-all duration-300
+        "
+      >
+        <span className="text-sm font-semibold tracking-widest uppercase text-[#F88A0B]">
           Our Vision
         </span>
 
-        <h3 className="text-3xl font-bold mt-4 mb-4">
+        <h3 className="text-3xl font-bold mt-4 mb-4 text-[#2D2D2D]">
           Shaping the Future of Accounting
         </h3>
 
-        <p className="text-lg leading-relaxed">
+        <p className="text-lg leading-relaxed text-[#555555]">
           To be recognized as a leading professional accounting firm known for
           excellence, integrity, and innovation across industries.
         </p>
@@ -240,17 +278,18 @@ const About = () => {
 
 
       {/* Why Choose Us */}
-  <section
-  className="py-24"
-  style={{ backgroundColor: "#fff8f2", color: "#063a53" }}
->
+  <section className="py-24 bg-[#F8F8F8]">
   <Container>
+
     {/* Heading */}
     <div className="text-center max-w-3xl mx-auto mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold mb-4">
+      <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#2D2D2D]">
         Why Choose AccountsZ CARE
       </h2>
-      <p className="text-lg">
+
+      <div className="w-24 h-1 bg-[#2DBCC7] mx-auto rounded-full mb-6"></div>
+
+      <p className="text-lg text-[#555555]">
         A trusted partner delivering reliable and ethical accounting
         solutions.
       </p>
@@ -264,19 +303,30 @@ const About = () => {
         return (
           <div
             key={index}
-            className={`bg-white rounded-2xl p-6 shadow-md
+            className={`
+              bg-white
+              rounded-3xl
+              p-6
+              shadow-lg
+              border border-[#2DBCC7]/20
+              hover:border-[#2DBCC7]
+              hover:-translate-y-2
+              transition-all duration-300
               ${isLast ? "lg:col-span-3 flex justify-center" : ""}
             `}
           >
             <div className="flex items-start gap-4 max-w-xl">
-              
+
               {/* Icon */}
-              <div className="shrink-0 text-orange-500">
+              <div className="shrink-0 text-[#F88A0B]">
                 {item.icon}
               </div>
 
               {/* Text */}
-              <p style={{ color: "#063a53" }}>{item.text}</p>
+              <p className="text-[#555555] leading-relaxed">
+                {item.text}
+              </p>
+
             </div>
           </div>
         );
@@ -285,13 +335,14 @@ const About = () => {
 
     {/* Tagline */}
     <div className="text-center mt-16">
-      <p className="text-xl font-semibold">
+      <p className="text-xl font-semibold text-[#2D2D2D]">
         AccountsZ CARE –{" "}
-        <span className="text-orange-500">
+        <span className="text-[#F88A0B]">
           Complete Accounting Solution You Can Trust
         </span>
       </p>
     </div>
+
   </Container>
 </section>
 

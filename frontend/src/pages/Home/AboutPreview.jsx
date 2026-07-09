@@ -7,35 +7,36 @@ const AboutPreview = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="py-24 bg-gradient-to-b from-[#fff3e6] to-[#ffe8cc]">
+    <section className="py-24 bg-[#F8F8F8]">
       <Container>
         <ScrollReveal>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            
+
             {/* Text Content */}
             <div>
-              <h2 className="text-4xl md:text-5xl font-heading font-extrabold mb-6 text-[#003c50]">
+              <h2 className="text-4xl md:text-5xl font-heading font-extrabold mb-6 text-[#2D2D2D]">
                 About AccountsZ CARE
               </h2>
 
-              <p className="text-[#003c50] max-w-3xl mb-8 text-lg md:text-xl leading-relaxed">
+              <div className="w-24 h-1 bg-[#2DBCC7] rounded-full mb-6"></div>
+
+              <p className="text-[#555555] max-w-3xl mb-8 text-lg md:text-xl leading-relaxed">
                 AccountsZ CARE is a professional accounting and financial services firm dedicated to
                 helping businesses manage their finances with clarity, accuracy, and confidence. We believe
                 that proper accounting is the backbone of every successful business, and our goal is to
                 provide reliable, timely, and cost-effective solutions tailored to our clients’ needs.
                 <br /><br />
                 Our mission is simple — to deliver{" "}
-                <span className="text-[#003c50] font-bold">
+                <span className="text-[#2DBCC7] font-bold">
                   Complete Accounting Solutions
                 </span>{" "}
                 that allow our clients to focus on what they do best, while we take care of the numbers.
               </p>
 
-              {/* Deep Orange Button */}
-              <Button 
-                variant="solid" 
+              <Button
+                variant="solid"
                 onClick={() => navigate("/about")}
-                className="bg-[#ea580c] text-white px-8 py-3 rounded-xl shadow-lg hover:bg-[#c2410c] hover:scale-105 transition-all duration-300"
+                className="bg-[#F88A0B] text-white px-8 py-3 rounded-xl shadow-lg hover:bg-[#E86F00] hover:scale-105 transition-all duration-300"
               >
                 Learn More
               </Button>
@@ -46,7 +47,7 @@ const AboutPreview = () => {
               <img
                 src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
                 alt="Professional Accounting"
-                className="rounded-3xl shadow-2xl object-cover w-full max-w-md hover:scale-105 transition-transform duration-500"
+                className="rounded-3xl shadow-2xl object-cover w-full max-w-md hover:scale-105 transition-transform duration-500 border-4 border-[#2DBCC7]/20"
               />
             </div>
 

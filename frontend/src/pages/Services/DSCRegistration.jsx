@@ -40,114 +40,132 @@ const DSCServices = () => {
       </div>
 
       {/* Main Content */}
-      <div
-        className="py-20"
-        style={{ backgroundColor: "#fff8f2", color: "#003b4d" }}
-      >
-        <div className="max-w-5xl mx-auto px-6">
+     <div className="py-24 bg-[#F8F8F8] text-[#2D2D2D]">
+  <div className="max-w-6xl mx-auto px-6">
 
-          {/* Intro */}
-          <div className="mb-12">
-            <p className="text-lg leading-relaxed">
-              Our streamlined process ensures smooth registration, renewal,
-              and compliance with government portal requirements.
-            </p>
-          </div>
+    {/* Introduction */}
+    <div className="mb-16 text-center">
+      <h2 className="text-4xl font-bold mb-6">
+        Digital Signature Certificate (DSC) Services
+      </h2>
 
-          {/* Services */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-6">
-              Our DSC Services Include
-            </h2>
+      <p className="text-lg text-[#555] max-w-4xl mx-auto leading-relaxed">
+        Our streamlined process ensures smooth registration, renewal,
+        and compliance with government portal requirements, helping
+        businesses and professionals operate securely and efficiently.
+      </p>
+    </div>
 
-            <div className="space-y-6 text-lg">
+    {/* Services */}
+    <div className="mb-20">
+      <h2 className="text-4xl font-bold text-center mb-12">
+        Our DSC Services Include
+      </h2>
 
-              <div className="flex items-start gap-4">
-                <FaKey className="text-2xl mt-1" />
-                <p>
-                  <strong>New DSC Registration:</strong> Issue of Class 3
-                  Digital Signature Certificates for individuals, directors,
-                  and authorized signatories.
-                </p>
-              </div>
+      <div className="grid md:grid-cols-2 gap-6">
 
-              <div className="flex items-start gap-4">
-                <FaSyncAlt className="text-2xl mt-1" />
-                <p>
-                  <strong>DSC Renewal:</strong> Timely renewal of expired or
-                  expiring DSCs to avoid disruption in statutory filings.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <FaUserTie className="text-2xl mt-1" />
-                <p>
-                  <strong>DSC for Directors & Companies:</strong> DSC
-                  registration for Directors, Partners, LLPs, and Companies
-                  for MCA, GST, and Income Tax filings.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <FaEdit className="text-2xl mt-1" />
-                <p>
-                  <strong>DSC Modification / Update:</strong> Changes in
-                  name, email ID, mobile number, or other DSC-related details.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <FaUsb className="text-2xl mt-1" />
-                <p>
-                  <strong>USB Token Support:</strong> Assistance with DSC
-                  token setup, installation, and usage guidance.
-                </p>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <FaGlobe className="text-2xl mt-1" />
-                <p>
-                  <strong>PAN-India Service Support:</strong> DSC
-                  registration services available across India with
-                  online verification support.
-                </p>
-              </div>
-
-            </div>
-          </div>
-
-          {/* Who We Serve */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-6">
-              Who We Serve
-            </h2>
-
-            <ul className="list-disc list-inside space-y-3 text-lg">
-              <li>Directors & Authorized Signatories</li>
-              <li>Companies & LLPs</li>
-              <li>Professionals & Consultants</li>
-              <li>Individuals requiring digital authentication</li>
-            </ul>
-
-            <p className="mt-6 text-lg font-medium">
-              With AccountsZ CARE, DSC registration is simple, secure,
-              and efficient — ensuring uninterrupted access to all
-              statutory and compliance portals.
-            </p>
-          </div>
-
-          {/* Back Button */}
-          <div className="text-center">
-            <Link
-              to="/services"
-              className="inline-block bg-[#003b4d] text-white px-12 py-4 rounded-2xl font-semibold hover:opacity-90 transition"
-            >
-              Back to Services
-            </Link>
-          </div>
-
+        <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <FaKey className="text-3xl text-[#2DBCC7] mt-1" />
+          <p>
+            <strong>New DSC Registration:</strong> Issue of Class 3
+            Digital Signature Certificates for individuals, directors,
+            and authorized signatories.
+          </p>
         </div>
+
+        <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <FaSyncAlt className="text-3xl text-[#2DBCC7] mt-1" />
+          <p>
+            <strong>DSC Renewal:</strong> Timely renewal of expired or
+            expiring DSCs to avoid disruption in statutory filings.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <FaUserTie className="text-3xl text-[#2DBCC7] mt-1" />
+          <p>
+            <strong>DSC for Directors & Companies:</strong> Registration
+            support for Directors, Partners, LLPs, and Companies for MCA,
+            GST, and Income Tax filings.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <FaEdit className="text-3xl text-[#2DBCC7] mt-1" />
+          <p>
+            <strong>DSC Modification / Update:</strong> Assistance with
+            updates to name, email ID, mobile number, and other DSC details.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <FaUsb className="text-3xl text-[#2DBCC7] mt-1" />
+          <p>
+            <strong>USB Token Support:</strong> Complete guidance for
+            token installation, setup, and usage.
+          </p>
+        </div>
+
+        <div className="flex items-start gap-4 bg-white p-6 rounded-2xl border border-[#C5C7CC]/40 shadow-sm hover:shadow-lg transition-all duration-300">
+          <FaGlobe className="text-3xl text-[#2DBCC7] mt-1" />
+          <p>
+            <strong>PAN-India Service Support:</strong> Online verification
+            and DSC registration assistance available across India.
+          </p>
+        </div>
+
       </div>
+    </div>
+
+    {/* Who We Serve */}
+    <div className="mb-20 bg-white p-10 rounded-3xl border border-[#C5C7CC]/40 shadow-sm">
+      <h2 className="text-4xl font-bold mb-8 text-center">
+        Who We Serve
+      </h2>
+
+      <div className="grid md:grid-cols-2 gap-4 text-lg">
+        <div>✓ Directors & Authorized Signatories</div>
+        <div>✓ Companies & LLPs</div>
+        <div>✓ Professionals & Consultants</div>
+        <div>✓ Individuals Requiring Digital Authentication</div>
+      </div>
+
+      <p className="mt-8 text-lg text-center font-medium">
+        With{" "}
+        <span className="text-[#F88A0B] font-bold">
+          AccountsZ CARE
+        </span>
+        , DSC registration becomes simple, secure, and efficient —
+        ensuring uninterrupted access to all statutory and compliance
+        portals.
+      </p>
+    </div>
+
+    {/* CTA */}
+    <div className="text-center">
+      <Link
+        to="/services"
+        className="
+          inline-block
+          bg-[#F88A0B]
+          text-white
+          px-12
+          py-4
+          rounded-2xl
+          font-semibold
+          shadow-lg
+          hover:bg-[#E67E09]
+          hover:scale-105
+          transition-all
+          duration-300
+        "
+      >
+        Back to Services
+      </Link>
+    </div>
+
+  </div>
+</div>
     </section>
   );
 };
