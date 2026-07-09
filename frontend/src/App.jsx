@@ -4,6 +4,7 @@ import AppRoutes from "./routes/AppRoutes";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import Loader from "./components/Loader";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
+    <ScrollToTop/>
       <Navbar />
       <AppRoutes />
       <Footer />
