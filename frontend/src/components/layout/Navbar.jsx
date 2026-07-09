@@ -9,10 +9,8 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const message =
-  "Hello 👋 This is AccountsZ CARE. Complete accounting & tax solutions. How can we help you?";
-
-const whatsappLink = `https://api.whatsapp.com/send?phone=916291653171&text=${encodeURIComponent(message)}`;
+  const whatsappLink =
+  "https://wa.me/916291653171?text=Hello%20I%20need%20consultation";
 
   return (
     <nav className="sticky top-0 z-50 bg-[#F8F8F8]/95 backdrop-blur-md border-b border-[#C5C7CC]/30 shadow-sm">
