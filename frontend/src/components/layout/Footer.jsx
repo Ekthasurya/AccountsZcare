@@ -14,14 +14,14 @@ const Footer = () => {
         {/* Logo + About */}
         <div>
           <img
-            src="https://res.cloudinary.com/dhd5do52g/image/upload/v1768120968/file_00000000ba6c71faa39b6cb1891035c4_gpbbgm.png"
+            src="https://res.cloudinary.com/dhd5do52g/image/upload/v1785136463/logo_3_-_Copy1_ntlcuv.png"
             alt="AccountsZ CARE"
-            className="w-48 mb-4"
+            className="w-48 mb-6"
           />
 
           <div className="w-16 h-1 bg-[#F88A0B] rounded-full mb-4"></div>
 
-          <p className="text-sm text-[#C5C7CC] leading-relaxed">
+          <p className="text-sm text-[#00334e] leading-relaxed">
             AccountsZ CARE provides professional accounting, taxation,
             compliance, and business support services across India with
             accuracy, reliability, and integrity.
@@ -30,7 +30,7 @@ const Footer = () => {
 
         {/* Our Services */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-[#2DBCC7]">
+          <h3 className="text-lg font-semibold mb-4 text-[#00334e]">
             OUR SERVICES
           </h3>
 
@@ -38,7 +38,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/services#GeneralServices"
-                className="text-[#C5C7CC] hover:text-[#F88A0B] transition-colors duration-300"
+                className="text-[#00334e] hover:text-[#F88A0B] transition-colors duration-300"
               >
                 Audit & Assurance
               </Link>
@@ -47,7 +47,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/services#GeneralServices"
-                className="text-[#C5C7CC] hover:text-[#F88A0B] transition-colors duration-300"
+                className="text-[#00334e] hover:text-[#F88A0B] transition-colors duration-300"
               >
                 Income Tax & GST
               </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/services#TechnicalServices"
-                className="text-[#C5C7CC] hover:text-[#F88A0B] transition-colors duration-300"
+                className="text-[#00334e] hover:text-[#F88A0B] transition-colors duration-300"
               >
                 PF & ESIC Services
               </Link>
@@ -65,7 +65,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/services#TechnicalServices"
-                className="text-[#C5C7CC] hover:text-[#F88A0B] transition-colors duration-300"
+                className="text-[#00334e] hover:text-[#F88A0B] transition-colors duration-300"
               >
                 Trade License
               </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
             <li>
               <Link
                 to="/services#SoftServices"
-                className="text-[#C5C7CC] hover:text-[#F88A0B] transition-colors duration-300"
+                className="text-[#00334e] hover:text-[#F88A0B] transition-colors duration-300"
               >
                 DSC Registration
               </Link>
@@ -84,17 +84,17 @@ const Footer = () => {
 
         {/* Office Address */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-[#2DBCC7]">
+          <h3 className="text-lg font-semibold mb-4 text-[#00334e]">
             OFFICE ADDRESS
           </h3>
 
-          <p className="text-sm text-[#C5C7CC] leading-relaxed">
+          <p className="text-sm text-[#00334e] leading-relaxed">
             Hatiara, New Market
             <br />
             Kolkata - 700157
           </p>
 
-          <div className="mt-4 text-sm text-[#C5C7CC] space-y-1">
+          <div className="mt-4 text-sm text-[#00334e] space-y-1">
             <p>Email: allcarezacc@gmail.com</p>
             <p>Phone: +91 6291653171</p>
           </div>
@@ -102,7 +102,7 @@ const Footer = () => {
 
         {/* Social */}
         <div>
-          <h3 className="text-lg font-semibold mb-4 text-[#2DBCC7]">
+          <h3 className="text-lg font-semibold mb-4 text-[#00334e]">
             GET SOCIAL
           </h3>
 

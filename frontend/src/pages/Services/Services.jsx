@@ -78,7 +78,7 @@ const Services = () => {
   className="text-white py-32 text-center bg-cover bg-center"
   style={{
     backgroundImage:
-      "url('https://images.pexels.com/photos/6693650/pexels-photo-6693650.jpeg')",
+      "url('https://res.cloudinary.com/dhd5do52g/image/upload/v1790964636/4c64377c9b12f7366351808649b16f5c_xn8szk.jpg')",
   }}
 >
   <Container>
